@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: consumer
+
+# 用Nacos做注册中心
+com:
+  alipay:
+    sofa:
+      rpc:
+        registry-address: nacos://nacos:nacos@127.0.0.1:8848
+
+
+sofa:
+  boot:
+    service:
+      default-version=:

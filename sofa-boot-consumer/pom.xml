@@ -10,15 +10,11 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <groupId>com.ds.sofa.boot.provider</groupId>
-    <artifactId>sofa-boot-provider</artifactId>
+    <groupId>com.ds.sofa.boot.consumer</groupId>
+    <artifactId>sofa-boot-consumer</artifactId>
     <version>1.0.0-RELEASE</version>
     <packaging>jar</packaging>
-    <name>sofa-boot-provider</name>
-
-    <properties>
-
-    </properties>
+    <name>sofa-boot-consumer</name>
 
     <dependencies>
         <dependency>
