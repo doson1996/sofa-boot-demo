@@ -16,4 +16,4 @@ com:
 sofa:
   boot:
     service:
-      default-version=:
+      default-version: 1.0
