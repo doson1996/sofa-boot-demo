@@ -1,13 +1,13 @@
 package com.ds.sofa.boot.consumer.controller;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import com.alipay.sofa.runtime.api.annotation.SofaReference;
 import com.alipay.sofa.runtime.api.annotation.SofaReferenceBinding;
 import com.ds.sofa.boot.provider.service.HelloService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @author ds
@@ -17,7 +17,7 @@ import java.util.Map;
 @RestController
 public class HelloController {
 
-    @SofaReference(binding = @SofaReferenceBinding(bindingType = "bolt"))
+    @SofaReference(uniqueId = "${service.unique.id}", binding = @SofaReferenceBinding(bindingType = "bolt"))
     private HelloService helloService;
 
     @RequestMapping("hello")

@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
  * @date 2025/3/26 23:23
  */
 @Service
-@SofaService( interfaceType = HelloService.class, bindings = {@SofaServiceBinding(bindingType = "bolt")})
+@SofaService( interfaceType = HelloService.class, uniqueId = "${service.unique.id}", bindings = {@SofaServiceBinding(bindingType = "bolt")})
 public class HelloServiceImpl implements HelloService {
     @Override
     public String sayHello(String name) {
